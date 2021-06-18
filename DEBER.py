@@ -27,7 +27,15 @@ class Clases:
             print("La suma de los dos ultimos valores ingresados es mayor al primer valor sumado 5")
         else:
             print("No aplica ninguna de las condiciones")
+     
+    def Circulo(self):
+        print("Calculo area de un circulo")
+        r=float(input("Ingresar radio del circulo"))
+        pi=3.1416
+        ar=pi*r
+        print("El area del circulo es:",ar)
         
 objclases=Clases()
 objclases.Operaciones()
 objclases.Oper_rela()
+objclases.Circulo()
