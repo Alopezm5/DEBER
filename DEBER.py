@@ -48,9 +48,32 @@ class Clases:
         tot=sueldo+tt
         print("El empleado gano un total de:{} de comisiones, por lo tanto su sueldo este mes es de:{}".format(tt,tot))
 
+    def Alumno(self):
+        con="SI"
+        acu=0
+        cont=0
+        while con=="SI":
+            nota=float(input("Ingresar nota del alumno"))
+            if nota>0 and nota<=10:
+                pass
+            else:
+                nota=float(input("Ingrese nota en el rango 0-10"))
+            acu=acu+nota
+            cont=+1
+            con=input("Desea ingresar mas notas")
+        pro=acu/cont
+        if pro>=7:
+            print("El alumno esta aprobado")
+        elif pro>=5:
+            print(("El alumno esta en remedial"))
+        else:
+            print("El alumno esta reprobado")
+
+        
 objclases=Clases()
 objclases.Operaciones()
 objclases.Oper_rela()
 objclases.Circulo()
 objclases.Secuencia()
 objclases.Secu_mas()
+objclases.Alumno()
