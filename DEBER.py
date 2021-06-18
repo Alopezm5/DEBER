@@ -35,7 +35,22 @@ class Clases:
         ar=pi*r
         print("El area del circulo es:",ar)
         
+    def Secu_mas(self):
+        com=int(input("Ingresar valor de comision"))
+        sueldo=float(input("Ingrese sueldo base"))
+        venta="SI"
+        acu=0
+        while venta=="SI":
+            val=float(input("Ingresar valor de la venta"))
+            acu=acu+val
+            venta=input("Desea ingresar mas venta")
+        tt=acu*(com/100)
+        tot=sueldo+tt
+        print("El empleado gano un total de:{} de comisiones, por lo tanto su sueldo este mes es de:{}".format(tt,tot))
+
 objclases=Clases()
 objclases.Operaciones()
 objclases.Oper_rela()
 objclases.Circulo()
+objclases.Secuencia()
+objclases.Secu_mas()
