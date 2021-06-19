@@ -69,6 +69,33 @@ class Clases:
         else:
             print("El alumno esta reprobado")
 
+    def trabajo_y_mayor(self):
+        hora=int(input("Ingresar el numero de horas trabajadas por el empleado"))
+        valor=float(input("Ingresar el valor de pago por cada hora"))
+        hoex=hora-40
+        tt=0
+        if hora>40:
+            if hoex>8:
+                ho1=hoex-8
+                tt=(valor*2*8)+(valor*3*ho1)
+            else:
+                tt=valor*2*hora
+        else:
+            tt=valor*hora
+        print("El trabajador trabajo:{} de horas, cada hora es pagada con un valor de:{}, por lo tanto su pago es de:{}".format(hora,valor,tt))
+        a=int(input("Ingresar 1 valor"))
+        b=int(input("Ingresar 2 valor"))
+        c=int(input("Ingresar 3 valor"))
+        if a>b and a>c:
+            print("El primer valor ingresado es el mayor")
+        elif b>c:
+            print("El segundo valor ingresado es el mayor")
+        elif a==b==c:
+            print("Los tres valores ingresados son iguales")
+        else:
+            print("El tercer valor ingresado es el mayor")
+
+           
         
 objclases=Clases()
 objclases.Operaciones()
@@ -77,3 +104,4 @@ objclases.Circulo()
 objclases.Secuencia()
 objclases.Secu_mas()
 objclases.Alumno()
+objclases.trabajo_y_mayor()
