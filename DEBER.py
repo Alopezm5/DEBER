@@ -111,6 +111,24 @@ class Clases:
             p=0
             print("No realiza ninguna accion por lo tanto su valor es reemplazo con",p)
         
+    def ciForyWhi(self):
+        n1=int(input("Ingresar un numero entero tope "))
+        sum=0
+        for i in range(n1):
+            sum=sum+i
+        print("La suma de:{} da un total de:{}".format(n1,sum))
+
+        print("Ciclo while")
+        n2=int(input("Ingresar un numero entero"))
+        t1=0
+        pro=1
+        c=1
+        while c<=n2:
+            t1=t1+c
+            pro=pro*c
+            c+=1
+        print("El  total de la suma de:{} es de:{} y el de los productos es de:{}".format(n2,t1,pro))
+
         
 objclases=Clases()
 objclases.Operaciones()
@@ -121,4 +139,5 @@ objclases.Secu_mas()
 objclases.Alumno()
 objclases.trabajo_y_mayor()
 objclases.conMulti()
+objclases.ciForyWhi()
 
