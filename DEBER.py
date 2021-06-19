@@ -95,7 +95,22 @@ class Clases:
         else:
             print("El tercer valor ingresado es el mayor")
 
-           
+    def conMulti(self):
+        num=int(input("Ingresar un valor entero para la accion del 1 al 3"))
+        con=int(input("Ingresar un numero "))
+        if num==1:
+            p=100*con
+            print("La accion:{}, hace que el valor constante se multiple con el segun valor ingresado por lo tanto la respuesta es:{}".format(num,p))
+        elif num==2:
+            p = 100 ** num
+            print("La accion:{}, hace que el valor constante se eleve con el segun valor ingresado por lo tanto la respuesta es:{}".format(num,p))
+        elif num==3:
+            p=100/num
+            print("La accion:{}, hace que el valor constante se divida con el segun valor ingresado por lo tanto la respuesta es:{}".format(num,p))
+        else:
+            p=0
+            print("No realiza ninguna accion por lo tanto su valor es reemplazo con",p)
+        
         
 objclases=Clases()
 objclases.Operaciones()
@@ -105,3 +120,5 @@ objclases.Secuencia()
 objclases.Secu_mas()
 objclases.Alumno()
 objclases.trabajo_y_mayor()
+objclases.conMulti()
+
