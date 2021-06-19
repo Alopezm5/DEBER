@@ -129,6 +129,17 @@ class Clases:
             c+=1
         print("El  total de la suma de:{} es de:{} y el de los productos es de:{}".format(n2,t1,pro))
 
+    def arreglo(self):
+        A = int(input(u"Ingrese el tamaño de los arreglos"))
+        B = []
+        C = []
+        for i in range(0, A):
+            B.append(input("Ingrese nombre de las personas"))
+        print("El arreglo de los nombres queda:",B)
+        for j in range(0, A):
+            C.append(len(B[j]))
+        print("La longitud de cada arreglo es de:" ,C)
+        
         
 objclases=Clases()
 objclases.Operaciones()
@@ -140,4 +151,5 @@ objclases.Alumno()
 objclases.trabajo_y_mayor()
 objclases.conMulti()
 objclases.ciForyWhi()
+objclases.arreglo()
 
