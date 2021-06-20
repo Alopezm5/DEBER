@@ -42,7 +42,7 @@ class Clases:
         while venta=="SI":
             val=float(input("Ingresar valor de la venta"))
             acu=acu+val
-            venta=input("Desea ingresar mas venta")
+            venta=input("Desea ingresar mas venta").upper()
         tt=acu*(com/100)
         tot=sueldo+tt
         print("El empleado gano un total de:{} de comisiones, por lo tanto su sueldo este mes es de:{}".format(tt,tot))
@@ -59,7 +59,7 @@ class Clases:
                 nota=float(input("Ingrese nota en el rango 0-10"))
             acu=acu+nota
             cont=+1
-            con=input("Desea ingresar mas notas")
+            con=input("Desea ingresar mas notas").upper()
         pro=acu/cont
         if pro>=7:
             print("El alumno esta aprobado")
@@ -82,6 +82,7 @@ class Clases:
         else:
             tt=valor*hora
         print("El trabajador trabajo:{} de horas, cada hora es pagada con un valor de:{}, por lo tanto su pago es de:{}".format(hora,valor,tt))
+        print("Ejercicio de mayor numero")
         a=int(input("Ingresar 1 valor"))
         b=int(input("Ingresar 2 valor"))
         c=int(input("Ingresar 3 valor"))
